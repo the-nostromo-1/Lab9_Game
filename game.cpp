@@ -42,6 +42,7 @@ int main() { // Main Game loop
     
     int number_of_tries = 0;
     while (matchRoom(mouse, cheese_room) == false) {
+        cout << "Current Mouse position: ";
         mouse.print();
         cout << endl;
         if (number_of_tries >= 5) { // Give user ability to quit
